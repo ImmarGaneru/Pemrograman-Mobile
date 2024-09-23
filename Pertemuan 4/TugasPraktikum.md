@@ -43,21 +43,31 @@
     Modifikasi record
     ![p5.5](image-20.png)
 2. Jelaskan yang dimaksud Functions dalam bahasa Dart!
+
     function adalah blok kode yang berada di luar main dan dapat dipanggil untuk melakukan operasi.
 3. Jelaskan jenis-jenis parameter di Functions beserta contoh sintaksnya!
+
     a. Positional Parameters: parameter yang harus diisi sesuai urutan deklarasi
         void test(String data1, int data2){}
+
     b. Optional Positional Parameters: parameter yang bersifat opsional
         void test(String data1, [int? data2]){}
+
     c. Named Parameters: parameter yang disebutkan namanya ketika dipanggil
         void test({String? data1, int? data2}){}
+
     d. Required Named Parameters: Named parameters yang wajib diisi
         void test({required String data1, required int data2}){}
+
     e. Default Values: parameter yang memiliki nilai default
         void test({String data1 = '1', int data2 = 0}){}
+
 4. Jelaskan maksud Functions sebagai first-class objects beserta contoh sintaknya!
+
     function sebagai first-class objects berarti bahwa function bisa disimpan dalam variabel, dilewatkan sebagai parameter ke function lain, atau dikembalikan dari function.
+
     void main() {
+
     var sayHello = (String name) {
         print('Hello, $name!');
     };
@@ -70,7 +80,9 @@
     executeFunction(sayHello, 'Immar');  // Output: Hello, Immar!
     }
 5. Apa itu Anonymous Functions? Jelaskan dan berikan contohnya!
+
     Anonymus function adalah function yang tidak memiliki nama
+
     void main() {
     var numbers = [1, 2, 3, 4];
     
@@ -80,7 +92,9 @@
     });
     }
 6. Jelaskan perbedaan Lexical scope dan Lexical closures! Berikan contohnya!
+
     a. Lexical Scope: variabel yang didefinisikan dalam scope dan hanya dapat diakses di dalam scope tersebut
+
         void main() {
         int x = 10;
 
@@ -90,7 +104,9 @@
 
         printX();  // Output: 10
         }
+        
     b. Lexical Closure: function yang mengingat scope di mana function itu dideklarasikan
+
         Function makeAdder(int addBy) {
             return (int i) => i + addBy;  // Membuat closure
         }
@@ -100,8 +116,10 @@
             print(add5(10));  // Output: 15
         }
 7. Jelaskan dengan contoh cara membuat return multiple value di Functions!
+
     Mengembalikan banyak nilai bisa dilakukan dengan menggunakan tuple, list, atau map.
     contoh dengan list:
+    
         List<dynamic> getPersonInfo() {
             return ['Immar', 2041720134];  // Mengembalikan list
         }
