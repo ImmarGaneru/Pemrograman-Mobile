@@ -18,7 +18,7 @@
     kode program merubah nilai gifts dengan key fifth menjadi 'golden rings', dan nilai nobleGases dengan key 18 menjadi 'argon'. kode juga membuat dua map kosong yaitu mhs1 dan mhs2
     Modifikasi untuk menambahkan nama dan nim untuk tiap variabel
     ![p3.3](image-7.png)
-    -Praktikum 4
+    - Praktikum 4
     ![p4.1](image-8.png)
     kode diatas menampilkan isi dari list1 yaitu 1, 2, dan 3, lalu menampilkan isi dari list2 yaitu 0 ditambah dengan isi list1 sehingga menjadi 0, 1, 2, 3. dan terakhir menampilkan panjang list2 yaitu 4.
     ![p4.2](image-9.png)
